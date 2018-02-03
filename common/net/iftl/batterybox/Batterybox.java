@@ -19,8 +19,8 @@ public class Batterybox
 	// Constants
     public static final String MODID = "iftl_batterybox";
     public static final String NAME = "IFTL Battery Box";
-    public static final String VERSION = "@VERSION@";
-    public static final String DEPENDENCIES = "required-after:forge@[14.23.1.2610,]"; //;after:modid";
+    public static final String VERSION = "1.0.0";
+    public static final String DEPENDENCIES = "required-after:forge@[14.23.1.2610,]";
     public static final String RESOURCE_PREFIX = MODID.toLowerCase() + ":";
     
     // Variables
@@ -31,7 +31,7 @@ public class Batterybox
     public static Batterybox instance;
     private static Logger logger;  
     
-    @SidedProxy(clientSide = "net.iftl.batterybox.clientproxy", serverSide = "net.iftl.batterybox.commonproxy")
+    @SidedProxy(clientSide = "net.iftl.batterybox.ClientProxy", serverSide = "net.iftl.batterybox.CommonProxy")
     public static CommonProxy proxy;
     
     @EventHandler
